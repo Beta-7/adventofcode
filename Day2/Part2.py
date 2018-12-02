@@ -7,7 +7,11 @@ def checkLetters(str,str2):
             return False
         if str[a] != str2[a]:
             cnt +=1
-    return True
+    strans = ''
+    for a in range(0,len(str)):
+        if str[a] == str2[a]:
+            strans+=str[a]
+    print(strans)
 inputs = []
 with open('input.txt') as my_file:
     for line in my_file:
