@@ -21,4 +21,3 @@ with open('input.txt') as my_file:
 for a in range(0, len(inputs)):
     for b in range(a, len(inputs)):
         if checkLetters(inputs[a],inputs[b]):
-            print('Checking {0} and {1}'.format(inputs[a],inputs[b]))
